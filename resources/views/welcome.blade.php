@@ -209,8 +209,8 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Contact</h3>
                     <ul class="space-y-2">
-                        <li class="text-gray-400">Email: contact@ontechsolutions.com</li>
-                        <li class="text-gray-400">Phone: +260 XXX XXX XXX</li>
+                        <li class="text-gray-400">Email: contact@ontechsolutions.co.zm</li>
+                        <li class="text-gray-400">Phone: +260 979 669 350</li>
                         <li class="text-gray-400">Location: Lusaka, Zambia</li>
                     </ul>
                 </div>
@@ -218,7 +218,7 @@
             <div class="mt-12 pt-8 border-t border-gray-800">
                 <div class="text-center text-gray-400">
                     <p>&copy; 2024 Premium Plots. All rights reserved.</p>
-                    <p class="mt-2">Developed by <a href="https://ontechsolutions.com" class="text-zambia-green hover:text-zambia-green/80">Ontech Solutions</a></p>
+                    <p class="mt-2">Developed by <a href="https://ontechsolutions.co.zm" class="text-zambia-green hover:text-zambia-green/80">Ontech Solutions</a></p>
                 </div>
             </div>
         </div>
