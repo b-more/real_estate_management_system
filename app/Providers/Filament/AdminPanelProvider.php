@@ -10,6 +10,7 @@ use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
 use Filament\Widgets;
+use Filament\Widgets\StatsOverviewWidget;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -28,7 +29,12 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::Amber,//Color::hex('#198754'),    // Zambian Green
+                'secondary' => Color::hex('#CE1126'),   // Zambian Red
+                'accent' => Color::hex('#FF8C00'),     // Copper
+                'warning' => Color::hex('#FF8C00'),
+                'success' => Color::hex('#3CB371'),
+                'danger' => Color::hex('#CE1126'),
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -37,8 +43,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->widgets([
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
+                StatsOverviewWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
@@ -51,6 +56,7 @@ class AdminPanelProvider extends PanelProvider
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
             ])
+            ->viteTheme('resources/css/filament/admin/theme.css')
             ->authMiddleware([
                 Authenticate::class,
             ]);

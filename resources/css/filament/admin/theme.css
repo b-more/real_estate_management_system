@@ -1,0 +1,165 @@
+@import "../../../../vendor/filament/filament/resources/css/theme.css";
+@config './tailwind.config.js';
+
+/* Color Variables Based on Zambian Flag */
+:root {
+    --zm-green: #198754;     /* Vibrant green from flag */
+    --zm-red: #CE1126;       /* Red from flag */
+    --zm-black: #000000;     /* Black from flag */
+    --zm-copper: #FF8C00;    /* Orange/Copper color representing copper mining */
+    --zm-light-green: #3CB371; /* Lighter shade of green for hover states */
+    --zm-background: #F0F8F4; /* Light green tinted background */
+}
+
+/* Sidebar Styles */
+.fi-sidebar {
+    @apply bg-[#198754] bg-opacity-95 !important;
+}
+
+.fi-sidebar-header {
+    @apply bg-transparent border-b border-white/10 !important;
+}
+
+.fi-sidebar-item-label {
+    @apply text-white hover:text-[#FF8C00] !important;
+}
+
+.fi-sidebar-item {
+    @apply bg-transparent !important;
+}
+
+.fi-sidebar-item-button {
+    @apply bg-transparent hover:bg-white/10 !important;
+}
+
+.fi-sidebar-item .fi-active .fi-sidebar-item-active {
+    @apply hover:bg-transparent border-r-4 border-[#FF8C00] text-white bg-transparent !important;
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-label {
+    @apply text-[#FF8C00] hover:text-white !important;
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-button {
+    @apply bg-black/10 rounded-lg border-r-4 border-[#FF8C00] !important;
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-icon {
+    @apply p-1 rounded-lg bg-[#FF8C00] bg-opacity-20 shadow-md border border-[#FF8C00] text-[#FF8C00] !important;
+}
+
+.fi-sidebar-item-icon {
+    @apply p-1 rounded-lg bg-white/10 shadow-md border border-white/20 text-white !important;
+}
+
+.fi-sidebar-group-label {
+    @apply text-white/70 text-sm font-medium !important;
+}
+
+/* Topbar Styles */
+.fi-topbar nav {
+    @apply bg-white shadow-sm border-b border-[#198754]/20 !important;
+}
+
+.fi-topbar {
+    @apply shadow-sm !important;
+}
+
+/* Body Styles */
+.fi-body {
+    @apply bg-gradient-to-br from-[#F0F8F4] to-white dark:from-[#1a1a1a] dark:to-[#2d2d2d] !important;
+}
+
+/* Header Styles */
+.fi-header-heading {
+    @apply text-2xl font-bold text-[#198754] dark:text-[#3CB371] !important;
+}
+
+.fi-icon-btn-icon {
+    @apply text-[#FF8C00] hover:text-[#198754] transition-colors duration-200 !important;
+}
+
+.fi-header-subheading {
+    @apply text-sm text-gray-600 dark:text-gray-300 !important;
+}
+
+/* Form Elements */
+.fi-input {
+    @apply border-[#198754]/20 focus:border-[#198754] focus:ring-[#198754]/20 !important;
+}
+
+.fi-btn-primary {
+    @apply bg-[#198754] hover:bg-[#3CB371] text-white !important;
+}
+
+/* Table Styles */
+.fi-table {
+    @apply bg-white dark:bg-gray-800 shadow-sm rounded-lg !important;
+}
+
+.fi-table-header {
+    @apply bg-[#F0F8F4] dark:bg-gray-700 !important;
+}
+
+/* Card Styles */
+.fi-card {
+    @apply bg-white dark:bg-gray-800 shadow-sm border border-[#198754]/10 !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .fi-sidebar {
+        @apply bg-[#198754] !important;
+    }
+    
+    .fi-topbar nav {
+        @apply bg-white/95 backdrop-blur-sm !important;
+    }
+}
+
+/* Login Page Styles */
+.fi-simple-layout {
+    @apply bg-gradient-to-br from-[#F0F8F4] to-white dark:from-[#1a1a1a] dark:to-[#2d2d2d] !important;
+}
+
+.fi-simple-main {
+    @apply bg-transparent !important;
+}
+
+.fi-simple-footer {
+    @apply text-gray-600 dark:text-gray-400 !important;
+}
+
+/* Login Card Styles */
+.fi-auth-card {
+    @apply bg-white dark:bg-gray-800 border border-[#198754]/10 !important;
+}
+
+/* Login Form Styles */
+.fi-input-wrp {
+    @apply border-[#198754]/20 focus-within:border-[#198754] !important;
+}
+
+.fi-input {
+    @apply focus:ring-[#198754] !important;
+}
+
+/* Login Button */
+.fi-btn-primary {
+    @apply bg-[#198754] hover:bg-[#3CB371] focus:ring-[#198754]/50 !important;
+}
+
+/* Remember Me Checkbox */
+.fi-checkbox-input {
+    @apply text-[#198754] focus:ring-[#198754]/50 !important;
+}
+
+/* Links */
+.fi-link {
+    @apply text-[#198754] hover:text-[#3CB371] !important;
+}
+
+/* Logo/Brand Area */
+.fi-logo {
+    @apply text-[#198754] dark:text-[#3CB371] !important;
+}
